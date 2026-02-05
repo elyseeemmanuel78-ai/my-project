@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Projet de Groupe Animé</title>
+    <style>
+        /* BASE DU SITE */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background-color: #f0f2f5; 
+        }
+
+        /* ANIMATION D'APPARITION FLUIDE */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header { 
+            background: #24292e; 
+            color: white; 
+            padding: 30px; 
+            text-align: center; 
+            border-radius: 10px; 
+            margin-bottom: 20px;
+            animation: fadeInUp 0.8s ease-out; /* Animation ici */
+        }
+
+        .membre { 
+            background: white; 
+            padding: 20px; 
+            margin-bottom: 20px; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08); 
+            border-left: 6px solid #007bff;
+            transition: all 0.3s ease; /* Prépare l'animation au survol */
+            animation: fadeInUp 1s ease-out both;
+        }
+
+        /* EFFET AU SURVOL (INTERACTION) */
+        .membre:hover {
+            transform: scale(1.02); /* Grossit légèrement */
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            cursor: default;
+        }
+
+        /* DÉLAIS POUR QUE LES SECTIONS APPARAISSENT L'UNE APRÈS L'AUTRE */
+        .membre:nth-child(2) { animation-delay: 0.2s; }
+        .membre:nth-child(3) { animation-delay: 0.4s; }
+        .membre:nth-child(4) { animation-delay: 0.6s; }
+
+        h2 { color: #007bff; margin-top: 0; }
+        footer { text-align: center; margin-top: 50px; font-size: 0.8em; color: #666; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Site de notre Groupe</h1>
+        <p>Projet collaboratif avec animations fluides</p>
+    </header>
+
+    <div class="membre">
+        <h2>Partie de [TON NOM]</h2>
+        <p>C'est moi qui ai créé le dépôt GitHub. Survolez ce cadre pour voir l'effet !</p>
+    </div>
+
+    <div class="membre" style="border-left-color: #28a745;">
+        <h2>Partie de [CAMARADE A]</h2>
+        <p>Contenu en cours de rédaction par mon premier camarade.</p>
+    </div>
+
+    <div class="membre" style="border-left-color: #e44d26;">
+        <h2>Partie de [CAMARADE B]</h2>
+        <p>Contenu en cours de rédaction par mon deuxième camarade.</p>
+    </div>
+
+    <footer>
+        <p>Actualisez la page pour revoir les animations d'entrée.</p>
+    </footer>
+
+</body>
+</html>
