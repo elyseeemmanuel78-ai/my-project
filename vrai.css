@@ -187,6 +187,48 @@ footer {
     margin: 0 0 10px 0;
     color: #2c3e50;
 }
+h1 {
+    /* Mise en forme du texte */
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 40px auto;
+    padding: 15px 40px;
+    display: table; /* Permet au bloc de s'adapter à la largeur du texte */
+
+    /* Forme de pilule arrondie */
+    border-radius: 50px;
+
+    /* Couleur de base verte */
+    background-color: #27ae60;
+
+    /* Effet de relief (Glossy) */
+    background: linear-gradient(to bottom, 
+        #40d47e 0%,    /* Vert clair en haut */
+        #27ae60 50%,   /* Vert moyen au milieu */
+        #1e8449 100%   /* Vert foncé en bas */
+    );
+
+    /* Bordure subtile et Ombre pour le relief */
+    border: 2px solid #1e8449;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), /* Ombre portée */
+                inset 0 2px 5px rgba(255, 255, 255, 0.5); /* Reflet blanc interne en haut */
+
+    /* Effet de texte */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Effet au passage de la souris */
+h1:hover {
+    transform: translateY(-3px); /* Le bouton monte un peu */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    filter: brightness(1.1); /* Devient un peu plus lumineux */
+}
+
 
 
 
