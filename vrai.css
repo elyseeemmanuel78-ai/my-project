@@ -1,5 +1,5 @@
 body {
-    background-color: bisque;
+  background-color:white;
      text-align: center;
 }
 h1 {
@@ -187,7 +187,7 @@ footer {
     margin: 0 0 10px 0;
     color: #2c3e50;
 }
-h1 {
+.un{
     /* Mise en forme du texte */
     color: white;
     font-family: 'Arial', sans-serif;
@@ -197,20 +197,12 @@ h1 {
     letter-spacing: 2px;
     margin: 40px auto;
     padding: 15px 40px;
-    display: table; /* Permet au bloc de s'adapter à la largeur du texte */
+    display: table; 
+    border-radius: 20px;
+background-color: #52e9dd;
 
-    /* Forme de pilule arrondie */
-    border-radius: 50px;
-
-    /* Couleur de base verte */
-    background-color: #27ae60;
-
-    /* Effet de relief (Glossy) */
-    background: linear-gradient(to bottom, 
-        #40d47e 0%,    /* Vert clair en haut */
-        #27ae60 50%,   /* Vert moyen au milieu */
-        #1e8449 100%   /* Vert foncé en bas */
-    );
+        
+    
 
     /* Bordure subtile et Ombre pour le relief */
     border: 2px solid #1e8449;
@@ -219,7 +211,16 @@ h1 {
 
     /* Effet de texte */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    
+    
 }
+.un:hover{
+     transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(6, 127, 138, 0.911);
+    transition: all 0.3s ease;
+
+}
+    
 
 /* Effet au passage de la souris */
 h1:hover {
@@ -228,7 +229,95 @@ h1:hover {
     cursor: pointer;
     filter: brightness(1.1); /* Devient un peu plus lumineux */
 }
+.xxx{
+   background: linear-gradient(135deg, #00008B 0%, #0000cd 100%);
+box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+border-radius: 20PX;
+}
+h2{
+    color: #ffffff; 
+    font-size: 2rem;       /* Plus grand */
+    margin-bottom: 20px;   /* Espace avec le paragraphe en dessous */
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+}
+.haha{
+    font-size: 150%;
+    color: white;
+    padding: 40px;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #00008B 0%, #0000cd 100%);
+    border-radius: 15px;
+}
+.xxx:hover{
+   
+border-radius: 20PX;
+ transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(6, 127, 138, 0.911);
+    transition: all 0.3s ease;
 
+}
+.return{
+    display: inline-block;    
+    padding: 8px 20px;         
+    margin: 20px;            
+    background-color: #f1f1f1;  
+    color: #333;              
+    text-decoration: none;     
+    border-radius: 8px;       
+    font-weight: bold;         
+    border: 1px solid #ccc;     
+    transition: all 0.3s ease;
+    color: white;
+    background-color: #0000cd;
+     
+    
 
+}
+.return :hover{
+    display: inline-block;    
+    padding: 8px 20px;         
+    margin: 20px;            
+    background-color: #f1f1f1;  
+    color: #333;              
+    text-decoration: none;     
+    border-radius: 8px;       
+    font-weight: bold;         
+    border: 1px solid #ccc;     
+    transition: all 0.3s ease;
+    color: white;
+    background-color: #0000cd;
+    border-radius: 20PX;
+ transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(6, 127, 138, 0.911);
+    transition: all 0.3s ease;
 
+}
+.kaka{
+    text-align: center;
+    background-color: cyan;
+    border-radius: 15px;
+    padding: 15px;
+
+}
+.kaka:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(6, 127, 138, 0.911);
+    transition: all 0.3s ease;
+     text-align: center;
+    background-color: cyan;
+    border-radius: 15px;
+    padding: 15px;
+
+}
+.kaka p:first-child {
+    text-decoration: underline;
+    font-weight: bold;
+    color: black;
+}
+.kaka p:nth-last-of-type(-n+4)::before {
+    content: "• "; 
+    font-weight: bold;
+    color: black; /* Tu peux changer la couleur ici */
+}
 
